@@ -25,27 +25,27 @@ class MVVMTestViewViewModelFromMVVMTest: MVVMTestViewViewModel {
         self.title = Dynamic(data.title)
         self.body = Dynamic(data.body)
         
-        var dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        self.date = Dynamic(dateFormatter.stringFromDate(data.date))
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = DateFormatter.Style.short
+        self.date = Dynamic(dateFormatter.string(from: data.date as Date))
         
         var delay = 3.0 * Double(NSEC_PER_SEC)
-        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-        dispatch_after(time, dispatch_get_main_queue(), {
+        var time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: time, execute: {
             self.title.value = "test"
         })
         
         delay = 4.0 * Double(NSEC_PER_SEC)
-        time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-        dispatch_after(time, dispatch_get_main_queue(), {
-            dateFormatter = NSDateFormatter()
-            dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
-            self.date.value = dateFormatter.stringFromDate(data.date)
+        time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: time, execute: {
+            dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = DateFormatter.Style.full
+            self.date.value = dateFormatter.string(from: data.date as Date)
         })
         
         delay = 5.0 * Double(NSEC_PER_SEC)
-        time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-        dispatch_after(time, dispatch_get_main_queue(), {
+        time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: time, execute: {
             self.body.value = "body test"
         })
     }

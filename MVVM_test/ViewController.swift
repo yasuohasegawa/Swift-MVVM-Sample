@@ -37,30 +37,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addUI()
-        
-        let testData: MVVMTestData = MVVMTestData()
-        
-        // set up default value
-        testData.title = "1"
-        testData.body = "2"
-        testData.date = NSDate()
-        
-        let viewModel = MVVMTestViewViewModelFromMVVMTest(testData)
-        self.viewModel = viewModel
     }
     
     func addUI() {
-        self.titleLabel = UILabel(frame: CGRectMake(0, 50, 300, 20));
+        self.titleLabel = UILabel(frame: CGRect(x: 0, y: 50, width: 300, height: 20));
         self.titleLabel.text = "";
         self.view.addSubview(self.titleLabel);
         
-        self.dateLabel = UILabel(frame: CGRectMake(0, 100, 300, 20));
+        self.dateLabel = UILabel(frame: CGRect(x: 0, y: 100, width: 300, height: 20));
         self.dateLabel.text = "";
         self.view.addSubview(self.dateLabel);
         
-        self.bodyTextLabel = UILabel(frame: CGRectMake(0, 150, 300, 20));
+        self.bodyTextLabel = UILabel(frame: CGRect(x: 0, y: 150, width: 300, height: 20));
         self.bodyTextLabel.text = "";
         self.view.addSubview(self.bodyTextLabel);
     }

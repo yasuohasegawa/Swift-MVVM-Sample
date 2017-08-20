@@ -9,7 +9,7 @@
 import Foundation
 
 class MVVMTestData {
-    var title: String!
-    var body: String!
-    var date: NSDate!
+    var title: String! = "1"
+    var body: String! = "2"
+    var date: Date! = Date()
 }

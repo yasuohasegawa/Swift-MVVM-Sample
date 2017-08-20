@@ -14,9 +14,9 @@
 		12F750821BC3C3CC00EB8D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F750801BC3C3CC00EB8D56 /* LaunchScreen.storyboard */; };
 		12F7508D1BC3C3CC00EB8D56 /* MVVM_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7508C1BC3C3CC00EB8D56 /* MVVM_testTests.swift */; };
 		12F750981BC3C3CC00EB8D56 /* MVVM_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F750971BC3C3CC00EB8D56 /* MVVM_testUITests.swift */; };
-		12F750A61BC3C3F100EB8D56 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F750A51BC3C3F100EB8D56 /* Dynamic.swift */; settings = {ASSET_TAGS = (); }; };
-		12F750A81BC3FFC400EB8D56 /* MVVMTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F750A71BC3FFC400EB8D56 /* MVVMTestData.swift */; settings = {ASSET_TAGS = (); }; };
-		12F750AA1BC4019800EB8D56 /* MVVMTestViewViewModelFromMVVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F750A91BC4019800EB8D56 /* MVVMTestViewViewModelFromMVVMTest.swift */; settings = {ASSET_TAGS = (); }; };
+		12F750A61BC3C3F100EB8D56 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F750A51BC3C3F100EB8D56 /* Dynamic.swift */; };
+		12F750A81BC3FFC400EB8D56 /* MVVMTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F750A71BC3FFC400EB8D56 /* MVVMTestData.swift */; };
+		12F750AA1BC4019800EB8D56 /* MVVMTestViewViewModelFromMVVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F750A91BC4019800EB8D56 /* MVVMTestViewViewModelFromMVVMTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,13 +201,16 @@
 				TargetAttributes = {
 					12F750731BC3C3CC00EB8D56 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0830;
 					};
 					12F750871BC3C3CC00EB8D56 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 12F750731BC3C3CC00EB8D56;
 					};
 					12F750921BC3C3CC00EB8D56 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 12F750731BC3C3CC00EB8D56;
 					};
 				};
@@ -414,6 +417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxxxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -425,6 +429,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxxxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -436,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.kappuku.MVVM-testTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM_test.app/MVVM_test";
 			};
 			name = Debug;
@@ -448,6 +454,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.kappuku.MVVM-testTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM_test.app/MVVM_test";
 			};
 			name = Release;
@@ -459,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.kappuku.MVVM-testUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MVVM_test;
 				USES_XCTRUNNER = YES;
 			};
@@ -471,6 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.kappuku.MVVM-testUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MVVM_test;
 				USES_XCTRUNNER = YES;
 			};
